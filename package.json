@@ -1,0 +1,18 @@
+{
+    "name": "js",
+    "main":"index.html",
+    "node-main":"server.js",
+    "version": "1.0.0",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "dependencies": {
+    	"express":"3.4.2",
+    	"express-pouchdb":"0.1.4",
+    	"socket.io":"0.9.16",
+      "iconv-lite":"0.2.11",
+      "corser":"2.0.0",
+      "j":"*"
+    }
+}
+

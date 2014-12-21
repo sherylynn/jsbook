@@ -1,0 +1,21 @@
+<div class="scrollable" xmlns="http://www.w3.org/1999/html">
+  <div class="scrollable-content">
+
+    <div class="list-group">
+      <div class="list-group-item">
+        <h1 ng-click="">欢迎<br/>
+        <small>这是图书管理系统{{test}}</small>
+        </h1>
+      </div>
+      <div btf-markdown ng-include="'assets/md/'+search_page.point['中文通用名']+'.md'" class="list-group-item">
+      </div>
+      <!--wiz-markdown content="markdown"></wiz-markdown-->
+      <!--上面的这个模块也可以使用-->
+      <div bs-panel title="修改书本信息">
+        <textarea type="text" ng-model="id" label="" bs-form-control></textarea>
+      </div>
+
+    </div>
+
+  </div>
+</div>

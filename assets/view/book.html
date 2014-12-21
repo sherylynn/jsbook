@@ -1,0 +1,86 @@
+
+<div content-for="title" >
+  <span >{{book_now['书名']}}</span>
+  <!--span>{{search_page.point["中文通用名"]}}</span-->
+</div>
+  
+<div class="scrollable">
+  <div class="scrollable-content container-fluid section">
+
+
+
+    <div class="panel-group" id="accordion">
+      <div class="panel panel-default">
+        <div class="panel-heading" toggle target="书名">
+          <h3 class="panel-title">
+            书名
+          </h3>
+        </div>
+        <div id="书名" toggleable active-class="in" exclusion-group="accordion1" default="active" class="panel-collapse collapse">
+          <div class="panel-body">
+            <h5>{{book_now["书名"]}}</h5>
+            <img ng-src='assets/img/{{book_now["ISBN"]}}.png'>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading" toggle target="作者">
+          <h3 class="panel-title">
+            作者
+          </h3>
+        </div>
+        <div id="作者" toggleable active-class="in" exclusion-group="accordion1" class="panel-collapse collapse">
+          <div class="panel-body">
+            <h5>{{book_now["作者"]}}</h5>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading" toggle target="出版社">
+          <h3 class="panel-title">
+
+            出版社
+          </h3>
+        </div>
+        <div id="出版社" toggleable active-class="in" exclusion-group="accordion1" class="panel-collapse collapse">
+          <div class="panel-body">
+            <h5>{{book_now["出版社"]}}</h5>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading" toggle target="ISBN">
+          <h3 class="panel-title">
+            ISBN
+          </h3>
+        </div>
+        <div id="ISBN" toggleable active-class="in" exclusion-group="accordion1" class="panel-collapse collapse">
+          <div class="panel-body">
+            <h5>{{book_now["ISBN"]}}</h5>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading" toggle target="索书号">
+          <h3 class="panel-title">
+            索书号
+          </h3>
+        </div>
+        <div id="索书号" toggleable active-class="in" exclusion-group="accordion1" class="panel-collapse collapse">
+          <div class="panel-body">
+            <h5>{{book_now["ISBN"]}}</h5>
+            <!--div class="list-group">
+              <div class="list-group-item" ng-repeat='thing in book_now["借阅人"]'>
+                <h3>{{thing}}<br/>
+                  <h5>{{book_now["索书号"][thing]}}</h5>
+                </h3>
+              </div>
+            </div-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+

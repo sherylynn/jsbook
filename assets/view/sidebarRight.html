@@ -1,0 +1,90 @@
+<div class="scrollable">
+  <div class="scrollable-content">
+    <div class="section container-fluid" >
+
+      <ul class="nav nav-tabs">
+        <li><a href="#booklist" toggle="on" parent-active-class="active">图书</a></li>
+        <li><a href="#userlist" toggle="on" parent-active-class="active">{{test}}</a></li>
+      </ul>
+
+      <div class="tab-content">
+        <div class="tab-pane"
+             toggleable
+             active-class="active"
+             default="active"
+             id="booklist"
+             exclusion-group="myTabs">
+
+          <div class="list-group">
+
+
+            <a class="list-group-item media" ng-href="#/book/{{bookdoc['doc']['ISBN']}}" ng-repeat="bookdoc in booklist">
+              <div class="pull-left">
+                <i class="fa fa-book icon-book fa-4x"></i><!--加一个text-primary 的类就会变蓝色-->
+              </div>
+              <div class="media-body">
+                <h5 class="media-heading">{{bookdoc['doc']["书名"]}}</h5>
+                <small ng-switch on="bookdoc.online">
+                <span ng-switch-when="true">
+                   <span class="label label-success">可借</span>
+                </span>
+                <span ng-switch-default>
+                  <span class="label label-default"><i>出借</i></span>
+                </span>
+                </small>
+              </div>
+            </a>
+
+
+
+
+          </div>
+
+
+        </div>
+
+        <div class="tab-pane"
+             toggleable
+             active-class="active"
+             id="userlist"
+             exclusion-group="myTabs">
+
+          <div class="list-group">
+            <a class="list-group-item media" ng-href="" ng-repeat="userdoc in userlist">
+              <div class="pull-left">
+                <i class="fa fa-user chat-user-avatar"></i>
+              </div>
+              <div class="media-body">
+                <h5 class="media-heading">{{userdoc['doc']["name"]}}</h5>
+                <small ng-switch on="userdoc.online">
+                <span ng-switch-when="true">
+                   <span class="label label-success">在线</span>
+                </span>
+                <span ng-switch-default>
+                  <span class="label label-default"><i>离线</i></span>
+                </span>
+                </small>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="btn-group justified nav-tabs">
+        <a class="btn btn-default"
+           href="#booklist"
+           toggle="on"
+           active-class="active">图书
+        </a>
+
+        <a class="btn btn-default"
+           href="#userlist"
+           toggle="on"
+           active-class="active">用户
+        </a>
+
+      </div>
+
+    </div>
+  </div>
+</div>
