@@ -1,0 +1,135 @@
+<%- include header %>
+		<!-- middle-content -->
+		<div class="container middle-content">
+			<div class="row">
+				<!-- breadcrumb -->
+				<ol class="breadcrumb">
+					<li><a href="#">主页</a></li>
+					<li><a href="#">分类</a></li>
+					<li class="active"><%= book.name %></li>
+				</ol>
+				<!-- login -->
+				<div class="col-md-4">
+					<div class="panel panel-info">
+						<div class="panel-heading">书籍分类 - Categories</div>
+						<div class="panel-body">
+							<ul>
+								<li>分类1
+									<ul>
+										<li>小分类1</li>
+										<li>小分类2</li>
+									</ul>
+								</li>
+								<li>分类2</li>
+								<li>分类3</li>
+								<li>分类4</li>
+							</ul>
+						</div><!-- /.panel-body -->
+					</div><!-- /.panel -->
+
+<%- include recommend %>
+
+
+				</div><!-- /.col-md-4 -->
+				<!-- 404 -->
+				<div class="col-md-8">
+					<div class="panel panel-default">
+						<div class="panel-body">
+							<h1 class="book-title"><span class="glyphicon glyphicon-book"></span> <%= book.name %><small><%= book.author %></small></h1>
+							<hr />
+							<div class="media">
+								<a href="#" class="media-left"><img class="img-rounded" src="/images/no-image_64x64.jpg" alt="" width="200" height="200"></a>
+								<div class="media-body">
+									<h4 class="media-heading">简介：</h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est et voluptate labore non numquam quod at, accusamus necessitatibus, tenetur quos pariatur iusto. Eveniet molestiae obcaecati quo commodi at nisi repudiandae.</p>
+									<h4>标签：</h4>
+									<p>
+										<a href="#" class="tag"><span class="glyphicon glyphicon-tag"></span> 演员</a> 
+										<a href="#" class="tag"><span class="glyphicon glyphicon-tag"></span> 自我</a> 
+										<a href="#" class="tag"><span class="glyphicon glyphicon-tag"></span> 修养</a>
+									</p>
+									<h4>位置：3楼 - 科技阅览室 - 4号架 - Hj49203</h4>
+									<a href="#" role="borrow" class="btn btn-success">4 本可借</a>
+									<a href="#" role="collected" class="btn btn-default"><span class="glyphicon glyphicon-star-empty"></span> 收藏该书</a>
+									<a href="#" role="collected" class="btn btn-default"><span class="glyphicon glyphicon-thumbs-up"></span> 10</a>
+									<a href="#" role="collected" class="btn btn-default"><span class="glyphicon glyphicon-thumbs-down"></span> 0</a>
+								</div>
+								<!-- base-info -->
+								<div class="base-info">
+									<hr />
+									<h2>基本信息</h2>
+									<p>出版社：广西师范大学出版社；第1版（2015年1月1日）</p>
+									<p>平装：268页</p>
+									<p>语种：简体中文</p>
+									<p>开本：32</p>
+									<p>ISBN：9787549561032</p>
+									<p>条形码：9787549561032</p>
+									<p>商品尺寸：20.4 x 14.2 x 2 cm</p>
+									<p>商品重量：358 g</p>
+									<p>品牌：北京贝贝特</p>
+									<p>ASIN：B00QF1824E</p>
+								</div><!-- /.base-info -->
+								<div class="book-details">
+									<hr />
+									<h2>书籍描述</h2>
+									<h3>编辑推荐</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis exercitationem doloribus ipsa neque, dolore fuga voluptatum sequi vitae quis dicta architecto odio asperiores, tempora tempore delectus ipsam expedita vero. Architecto.</p>
+									<p>Voluptatibus, hic soluta itaque aliquam provident? Illum recusandae repudiandae sint molestiae beatae velit dolor, aliquam a laborum ex fugiat laudantium, natus, ducimus eaque reiciendis. Nobis, id, accusantium. Corporis facilis, voluptatibus.</p>
+									<h3>名人推荐</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione illo molestias repudiandae nesciunt, autem fugit tempora, cum tempore ullam eaque quisquam sint inventore laboriosam. Hic, sunt eaque nemo illum alias.</p>
+									<p>Minus distinctio dolore molestias iste harum ratione optio error nihil dolorum, dolor asperiores quasi id ut, dolores sit? Exercitationem ratione omnis, consequuntur iure praesentium quae quasi voluptatem labore. Ducimus, aut?</p>
+									<p>Esse corrupti necessitatibus cum ducimus sit sunt quibusdam. Provident quisquam deserunt ex amet saepe distinctio, voluptatem necessitatibus, eveniet velit consequuntur at inventore repellendus ab id perferendis? Assumenda numquam deserunt, earum!</p>
+								</div><!-- /.book-details -->
+
+								<div class="book-comments">
+									<hr />
+									<h2>图书评论</h2>
+									<ul class="media-list comment-block">
+										<li class="media comment-body"><!-- 一条评论 -->
+											<a href="#" class="media-left"><img src="images/no-image_64x64.jpg" alt=""></a>
+											<div class="media-body">
+												<h4 class="media-heading">kenneth @ 2014-12-22 21:04</h4>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident quas autem neque, sit, similique minus architecto ut quos eius fugit necessitatibus maxime saepe iure, soluta assumenda cupiditate iste, repellat veritatis.</p>
+												<p class="reply-it"><a href="#"><span class="glyphicon glyphicon-pencil"></span> 回复一下TA</a></p>
+												<ul class="media-list comment-block reply-block">
+													<li class="media"><!-- 一条回复 -->
+														<a href="#" class="media-left"><img src="images/no-image_64x64.jpg" alt=""></a>
+														<div class="media-body">
+															<h4 class="media-heading">sherylynn 回复：kenneth @ 2014-12-22 21:04</h4>
+															<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident quas autem neque, sit, similique minus architecto ut quos eius fugit necessitatibus maxime saepe iure, soluta assumenda cupiditate iste, repellat veritatis.</p>
+															<p class="reply-it"><a href="#"><span class="glyphicon glyphicon-pencil"></span> 回复一下TA</a></p>
+														</div>
+													</li><!-- 结束回复 -->
+												</ul>
+											</div>
+										</li><!-- 结束评论 -->
+										<li class="media comment-body"><!-- 一条评论 -->
+											<a href="#" class="media-left"><img src="images/no-image_64x64.jpg" alt=""></a>
+											<div class="media-body">
+												<h4 class="media-heading">sherylynn @ 2014-12-22 21:04</h4>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente eum quia ad ex! Dicta, asperiores nemo et, rem cupiditate doloremque reprehenderit aspernatur eaque, animi voluptate molestias perferendis quia, veniam dolore.</p>
+												<p class="reply-it"><a href="#"><span class="glyphicon glyphicon-pencil"></span> 回复一下TA</a></p>
+											</div>
+										</li><!-- 结束评论 -->
+									</ul><!-- /.comment-block -->
+								</div><!-- /.book-comments -->
+								<!-- write a comment -->
+								<div class="comment-it">
+									<hr />
+									<h2>撰写一个评论</h2>
+									<form role="form">
+										<div class="form-group">
+											<label for="writeComments">用户名：<a href="#">kenneth</a> <span class="reply-to">回复给：<a href="#">sherylynn</a></span></label>
+											<textarea class="form-control" rows="3" id="writeComments"></textarea>
+										</div>
+										<button type="submit" class="btn btn-primary">提交 - Submit</button>
+									</form>
+								</div>
+							</div><!-- /.media -->
+						</div><!-- /.panel-body -->
+					</div><!-- /.panel -->
+				</div><!-- /.col-md-8 -->
+			</div><!-- /.row -->
+		</div><!-- /.middle-content -->
+
+<%- include footer %>

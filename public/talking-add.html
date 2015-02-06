@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>JSBook 杰尚书籍管理系统 ---- 超轻量级应用 ---- 透心凉 心飞扬</title>
+		<!-- 新 Bootstrap 核心 CSS 文件 
+		<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">-->
+		<!-- 可选的Bootstrap主题文件（一般不用引入） 
+		<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">-->
+
+		<!-- 暂时使用本地文件 -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- <link rel="stylesheet" href="css/bootstrap-theme.min.css"> -->
+		<link rel="stylesheet" href="css/style.css">
+		
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	
+	<body>
+		<!-- navigation -->
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#jsbook-navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">JSBook 杰尚书籍管理系统</a>
+				</div>
+
+				<!-- collapse -->
+				<div class="collapse navbar-collapse" id="jsbook-navbar">
+					<!-- left -->
+					<ul class="nav navbar-nav">
+						<li><a href="index.html">主页</a></li>
+						<li><a href="login.html">登陆</a></li>
+						<li><a href="booklist.html">书籍列表</a></li>
+						<li><a href="download.html">下载</a></li>
+						<li><a href="bbs.html">论坛</a></li>
+						<li><a href="talking.html">聊天</a></li>
+						<li class="active"><a href="chat.html">讨论</a></li>
+					</ul>
+
+					<!-- right -->
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<form class="navbar-form" role="search">
+								<div class="form-group">
+									<div class="input-group">
+										<input type="text" class="form-control" placeholder="Book Search">
+										<div class="input-group-addon"><button type="submit" class="btn-search"><span class="glyphicon glyphicon-search"></span></button></div>
+									</div>
+								</div>
+							</form>
+						</li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container -->
+		</nav>
+		<!-- /.header -->
+
+		<!-- middle-content -->
+		<div class="container middle-content">
+			<div class="row">
+				<!-- breadcrumb -->
+				<div class="container">
+					<ol class="breadcrumb">
+						<li><a href="#">主页</a></li>
+						<li><a href="#">讨论组</a></li>
+						<li class="active">添加讨论</li>
+					</ol>
+				</div>
+				<!-- talking-panel -->
+				<div class="col-md-3">
+					<div class="list-group">
+						<a href="#" class="list-group-item list-group-item-info">用户名：kenneth</a>
+						<a href="#" class="list-group-item"><span class="glyphicon glyphicon-plus"></span> 添加讨论</a>
+						<a href="#" class="list-group-item list-group-item-warning"><span class="badge">2 回复</span>我的话题：</a>
+						<a href="#" class="list-group-item"><span class="badge">0</span>关于我的：</a>
+					</div>
+					<div class="panel panel-info">
+						<div class="panel-heading">热议标签 - Hot Tags</div>
+						<div class="panel-body hot-tags">
+							<a href="#" class="label label-success">fuck1</a>
+							<a href="#" class="label label-success">fuck2</a>
+							<a href="#" class="label label-success">fuck3</a>
+							<a href="#" class="label label-success">fuck4</a>
+							<a href="#" class="label label-success">fuck5</a>
+							<a href="#" class="label label-success">fuck6</a>
+							<a href="#" class="label label-success">fuck7</a>
+							<a href="#" class="label label-success">fuck8</a>
+							<a href="#" class="label label-success">fuck9</a>
+							<a href="#" class="label label-success">fuck10</a>
+							<a href="#" class="label label-success">fuck11</a>
+							<a href="#" class="label label-success">fuck12</a>
+						</div>
+					</div>
+					<div class="panel panel-info">
+						<div class="panel-heading">热门话题 - Hot Talking</div>
+						<div class="panel-body">
+							<ul class="hot-topic">
+								<li><a href="#">topic - 1topic - 1topic - 1topic</a><small>2 回复</small></li>
+								<li><a href="#">topic - 2</a><small>2 回复</small></li>
+								<li><a href="#">topic - 3</a><small>2 回复</small></li>
+								<li><a href="#">topic - 4</a><small>2 回复</small></li>
+								<li><a href="#">topic - 5</a><small>2 回复</small></li>
+								<li><a href="#">topic - 6</a><small>2 回复</small></li>
+								<li><a href="#">topic - 7</a><small>2 回复</small></li>
+								<li><a href="#">topic - 8</a><small>2 回复</small></li>
+								<li><a href="#">topic - 9</a><small>2 回复</small></li>
+								<li><a href="#">topic - 10</a><small>2 回复</small></li>
+							</ul>
+						</div>
+					</div>
+				</div><!-- /.col-md-4 -->
+				<!-- talking-list -->
+				<div class="col-md-9">
+					<div class="panel panel-default">
+						<div class="panel-body">
+							<form action="">
+								<div class="form-group">
+									<label for="title">标题</label>
+									<input type="text" class="form-control" id="inputTalkingTitle" placeholder="Title">
+								</div>
+								<div class="form-group">
+									<label for="tags">标签（逗号分隔，如：学习,生活）</label>
+									<input type="text" class="form-control" id="inputTalkingTags" placeholder="Tags">
+								</div>
+								<div class="form-group">
+									<label for="content">内容</label>
+									<textarea class="form-control" id="inputTalkingContent" placeholder="Content" rows="30"></textarea>
+								</div>
+								<button class="btn btn-success btn-lg center-block">提交讨论</button>
+							</form>
+						</div><!-- /.panel-body -->
+					</div>
+				</div><!-- /.col-md-4 -->
+			</div><!-- /.row -->
+		</div><!-- /.middle-content -->
+
+		<!-- footer -->
+		<footer class="jsbook-footer" role="contentinfo">
+			<div class="container text-center">
+				<p>Front by <a href="http://weibo.cn/kenslife" target="_blank">@Kenneth</a>, System by <a href="http://weibo.cn/kenslife" target="_blank">@Sherylynn</a>.</p>
+				<p>前端使用 Bootstrap 快速开发，<a href="http://www.bootcss.com/" target="_blank">Bootstrap中文网</a>。</p>
+				<p>后台使用 NodeJs 强力驱动</p>
+				<p></p>
+				<p>当前版本：v0.0.1 · <a href="http://www.bootcss.com/" target="_blank">GitHub 代码仓库</a> · <a href="http://www.bootcss.com/" target="_blank">使用手册</a> · <a href="http://www.bootcss.com/" target="_blank">关于开发者</a> · <a href="http://www.bootcss.com/" target="_blank">讨论组</a>
+				</p>
+			</div>
+		</footer><!-- /.footer -->
+
+		<!-- jQuery文件。务必在bootstrap.min.js 之前引入 
+		<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>-->
+		<!-- 最新的 Bootstrap 核心 JavaScript 文件 
+		<script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>JSBook 杰尚书籍管理系统 ---- 超轻量级应用 ---- 透心凉 心飞扬</title>
+		<!-- 新 Bootstrap 核心 CSS 文件 
+		<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">-->
+		<!-- 可选的Bootstrap主题文件（一般不用引入） 
+		<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">-->
+
+		<!-- 暂时使用本地文件 -->
+		<link rel="stylesheet" href="../css/bootstrap.min.css">
+		<!-- <link rel="stylesheet" href="../css/bootstrap-theme.min.css"> -->
+		<link rel="stylesheet" href="../css/admin-style.css">
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	
+	<body>
+		<!-- navigation -->
+		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+			<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#jsbook-navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">JSBook 系统后台</a>
+			</div>
+
+			<!-- collapse -->
+			<div class="collapse navbar-collapse" id="jsbook-navbar">
+				<!-- left -->
+				<ul class="nav navbar-nav">
+					<li><a href="index.html"><span class="glyphicon glyphicon-home"></span> 主页</a></li>
+					<li class="active"><a href="ad-book.html"><span class="glyphicon glyphicon-book"></span> 书籍管理</a></li>
+					<li><a href="ad-user.html"><span class="glyphicon glyphicon-user"></span> 用户管理</a></li>
+					<li><a href="ad-talk.html"><span class="glyphicon glyphicon-comment"></span> 讨论组管理</a></li>
+					<li><a href="ad-chat.html"><span class="glyphicon glyphicon-bullhorn"></span> 聊天管理</a></li>
+					<li><a href="ad-other.html"><span class="glyphicon glyphicon-cog"></span> 其他设置</a></li>
+				</ul>
+
+				<!-- right -->
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<form class="navbar-form" role="search">
+							<div class="form-group">
+								<div class="input-group">
+									<input type="text" class="form-control" placeholder="Book Search">
+									<span class="input-group-btn">
+										<button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+									</span>
+								</div>
+							</div>
+						</form>
+					</li>
+					<li><a href="#"><span class="glyphicon glyphicon-off"></span> 退出</a></li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+			</div><!-- /.container -->
+		</nav>
+		<!-- /.header -->
+
+		<!-- middle-content -->
+		<div class="container-fluid middle-content">
+				<div class="row">
+					<div class="col-sm-3 col-md-2 sidebar">
+						<ul class="nav nav-sidebar">
+							<li class="active"><a href="ad-book.html"><span class="glyphicon glyphicon-stats"></span> 书籍概览</a></li>
+							<li><a href="ad-book-list.html"><span class="glyphicon glyphicon-book"></span> 书籍列表</a></li>
+						</ul>
+						<ul class="nav nav-sidebar">
+							<li><a href="ad-book-add.html"><span class="glyphicon glyphicon-plus"></span> 添加书籍</a></li>
+							<li><a href="ad-book-star.html"><span class="glyphicon glyphicon-star"></span> 推荐列表</a></li>
+						</ul>
+					</div><!-- /.sidebar -->
+					<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+						<h1 class="page-header">概览</h1>
+						<div class="row">
+							<div class="col-sm-4 col-md-4">
+								<ul>
+									<li>总书籍量：<span class="count-book">128</span> 本</li>
+									<li>可借图书：<span class="in-book">99</span> 本</li>
+									<li>已经借出：<span class="out-book">29</span> 本</li>
+								</ul>
+							</div>
+						</div>
+						<h2 class="sub-header">推荐列表</h2>
+						<div class="table-responsive">
+							<table class="table table-striped">
+								<thead>
+									<tr>
+										<th>编号</th>
+										<th>缩略图</th>
+										<th>书名</th>
+										<th>作者</th>
+										<th>归属人</th>
+										<th>状态</th>
+										<th>赞 / 踩 / 评</th>
+										<th>操作</th>
+									</tr>	
+								</thead>
+								<tbody>
+									<tr>
+										<td>2001</td>
+										<td>无</td>
+										<td>各种书籍</td>
+										<td>kenneth</td>
+										<td>kenneth</td>
+										<td>1 本可借</td>
+										<td>100 / 0 / 3</td>
+										<td><a href="#" class="btn btn-xs btn-primary"><span class="glyphicon glyphicon-pencil"></span> 改</a> <a href="#" class="btn btn-xs btn-danger"><span class="glyphicon glyphicon-remove"></span> 删</a></td>
+									</tr>
+									<tr>
+										<td>2001</td>
+										<td>无</td>
+										<td>各种书籍</td>
+										<td>kenneth</td>
+										<td>kenneth</td>
+										<td>1 本可借</td>
+										<td>100 / 0 / 3</td>
+										<td><a href="#" class="btn btn-xs btn-primary"><span class="glyphicon glyphicon-pencil"></span> 改</a> <a href="#" class="btn btn-xs btn-danger"><span class="glyphicon glyphicon-remove"></span> 删</a></td>
+									</tr>
+									<tr>
+										<td>2001</td>
+										<td>无</td>
+										<td>各种书籍</td>
+										<td>kenneth</td>
+										<td>kenneth</td>
+										<td>1 本可借</td>
+										<td>100 / 0 / 3</td>
+										<td><a href="#" class="btn btn-xs btn-primary"><span class="glyphicon glyphicon-pencil"></span> 改</a> <a href="#" class="btn btn-xs btn-danger"><span class="glyphicon glyphicon-remove"></span> 删</a></td>
+									</tr>
+									<tr>
+										<td>2001</td>
+										<td>无</td>
+										<td>各种书籍</td>
+										<td>kenneth</td>
+										<td>kenneth</td>
+										<td>1 本可借</td>
+										<td>100 / 0 / 3</td>
+										<td><a href="#" class="btn btn-xs btn-primary"><span class="glyphicon glyphicon-pencil"></span> 改</a> <a href="#" class="btn btn-xs btn-danger"><span class="glyphicon glyphicon-remove"></span> 删</a></td>
+									</tr>
+									<tr>
+										<td>2001</td>
+										<td>无</td>
+										<td>各种书籍</td>
+										<td>kenneth</td>
+										<td>kenneth</td>
+										<td>1 本可借</td>
+										<td>100 / 0 / 3</td>
+										<td><a href="#" class="btn btn-xs btn-primary"><span class="glyphicon glyphicon-pencil"></span> 改</a> <a href="#" class="btn btn-xs btn-danger"><span class="glyphicon glyphicon-remove"></span> 删</a></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div><!-- /.row -->
+		</div><!-- /.middle-content -->
+
+		<!-- jQuery文件。务必在bootstrap.min.js 之前引入 
+		<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>-->
+		<!-- 最新的 Bootstrap 核心 JavaScript 文件 
+		<script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>-->
+		<script src="../js/jquery.min.js"></script>
+		<script src="../js/bootstrap.min.js"></script>
+	</body>
+</html>

@@ -1,0 +1,76 @@
+body {
+	padding-top: 70px; 
+	font-family: "Microsoft Jhenghei", "Microsoft Yahei", "Lucida Grande", Verdana, Arial, Helvetica, "宋体", sans-serif;
+	font-size: 1.5em;
+	background-image: url(../images/bg.png);
+}
+
+.navbar-form .form-group input { padding-right: 30px }
+.btn-search {
+	border: none;
+	background: none;
+	padding: 0;
+}
+
+.jsbook-footer {
+	border-top: 1px solid rgb(200, 200, 200);
+	background: rgb(254, 254, 254);
+	padding: 50px 0px 25px 0px;
+	margin-top: 20px;
+	opacity: 0.5;
+	font-size: 0.8em;
+}
+.footer-links {float: right;}
+
+/* for index */
+.jumbotron {
+	background-image: url(../images/show1.jpg);
+	color: rgb(254, 254, 254);
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+}
+
+.rb-list .media .media-body .media-heading {
+	border-bottom: 1px dashed rgb(100, 100, 100);
+	font-weight: bolder;
+}
+
+/* for reg */
+.breadcrumb {
+	border: 1px solid rgb(220, 220, 220);
+}
+
+/* for booklist */
+.bl-book .media-body .media-heading	a { font-weight: bold; }
+
+/* for talking.html */
+.hot-tags { line-height: 26px; }
+.hot-topic { padding-left: 0px; }
+.hot-topic li {	list-style: none; }
+.hot-topic li small { display: inline-block;margin-left: 5px; }
+
+.talking-contents { padding-left: 0px; }
+.talking-contents li { list-style: none; }
+.talking-small-body { line-height: 26px; }
+.talking-small-body hr { margin: 10px 0px; }
+
+a.talking-btn {
+	color: rgb(200, 200, 200);
+	line-height: 25px;
+	text-decoration: none;
+	margin-right: 5px;
+}
+a.talking-btn:hover { color: rgb(100, 100, 100);text-decoration: none; }
+a.talking-btn .glyphicon { margin: 0px 5px; }
+.talking-title { font-weight: bold;color: #333333; }
+.talking-tag { background-color: #E7F2ED;color: #017E66; }
+.talking-tag:hover { background-color: #017E66;color: #E7F2ED; }
+
+.talking-func { margin-top: 20px;list-style-type: none;padding: 0;display: block;height: 20px; }
+.talking-func li { float: left;margin-right: 15px; }
+.talking-func li a { color: #999; }
+
+.talking-comment-title h3 { font-weight: bold; }
+.talking-comment-title hr { border-top: 2px solid #999; }
+
+.dotted { border-top: 1px dashed #999; }
+.comment-submit { margin: 20px 0; }

@@ -1,0 +1,9 @@
+#*
+*.o
+*.pyc
+*~
+db/
+extern/
+node_modules/
+tmp
+vendor/

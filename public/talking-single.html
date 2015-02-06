@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>JSBook 杰尚书籍管理系统 ---- 超轻量级应用 ---- 透心凉 心飞扬</title>
+		<!-- 新 Bootstrap 核心 CSS 文件 
+		<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">-->
+		<!-- 可选的Bootstrap主题文件（一般不用引入） 
+		<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">-->
+
+		<!-- 暂时使用本地文件 -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- <link rel="stylesheet" href="css/bootstrap-theme.min.css"> -->
+		<link rel="stylesheet" href="css/style.css">
+		
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	
+	<body>
+		<!-- navigation -->
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#jsbook-navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">JSBook 杰尚书籍管理系统</a>
+				</div>
+
+				<!-- collapse -->
+				<div class="collapse navbar-collapse" id="jsbook-navbar">
+					<!-- left -->
+					<ul class="nav navbar-nav">
+						<li><a href="index.html">主页</a></li>
+						<li><a href="login.html">登陆</a></li>
+						<li><a href="booklist.html">书籍列表</a></li>
+						<li><a href="download.html">下载</a></li>
+						<li><a href="bbs.html">论坛</a></li>
+						<li><a href="talking.html">聊天</a></li>
+						<li class="active"><a href="chat.html">讨论</a></li>
+					</ul>
+
+					<!-- right -->
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<form class="navbar-form" role="search">
+								<div class="form-group">
+									<div class="input-group">
+										<input type="text" class="form-control" placeholder="Book Search">
+										<div class="input-group-addon"><button type="submit" class="btn-search"><span class="glyphicon glyphicon-search"></span></button></div>
+									</div>
+								</div>
+							</form>
+						</li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container -->
+		</nav>
+		<!-- /.header -->
+
+		<!-- middle-content -->
+		<div class="container middle-content">
+			<div class="row">
+				<!-- breadcrumb -->
+				<div class="container">
+					<ol class="breadcrumb">
+						<li><a href="#">主页</a></li>
+						<li><a href="#">讨论组</a></li>
+						<li class="active">论雷峰塔的倒塌</li>
+					</ol>
+				</div>
+				<!-- talking-panel -->
+				<div class="col-md-3">
+					<div class="list-group">
+						<a href="#" class="list-group-item list-group-item-info">用户名：kenneth</a>
+						<a href="#" class="list-group-item list-group-item-warning"><span class="badge">2 回复</span>我的话题：</a>
+						<a href="#" class="list-group-item"><span class="badge">0</span>关于我的：</a>
+					</div>
+					<div class="panel panel-info">
+						<div class="panel-heading">热议标签 - Hot Tags</div>
+						<div class="panel-body hot-tags">
+							<a href="#" class="label label-success">fuck1</a>
+							<a href="#" class="label label-success">fuck2</a>
+							<a href="#" class="label label-success">fuck3</a>
+							<a href="#" class="label label-success">fuck4</a>
+							<a href="#" class="label label-success">fuck5</a>
+							<a href="#" class="label label-success">fuck6</a>
+							<a href="#" class="label label-success">fuck7</a>
+							<a href="#" class="label label-success">fuck8</a>
+							<a href="#" class="label label-success">fuck9</a>
+							<a href="#" class="label label-success">fuck10</a>
+							<a href="#" class="label label-success">fuck11</a>
+							<a href="#" class="label label-success">fuck12</a>
+						</div>
+					</div>
+					<div class="panel panel-info">
+						<div class="panel-heading">热门话题 - Hot Talking</div>
+						<div class="panel-body">
+							<ul class="hot-topic">
+								<li><a href="#">topic - 1topic - 1topic - 1topic</a><small>2 回复</small></li>
+								<li><a href="#">topic - 2</a><small>2 回复</small></li>
+								<li><a href="#">topic - 3</a><small>2 回复</small></li>
+								<li><a href="#">topic - 4</a><small>2 回复</small></li>
+								<li><a href="#">topic - 5</a><small>2 回复</small></li>
+								<li><a href="#">topic - 6</a><small>2 回复</small></li>
+								<li><a href="#">topic - 7</a><small>2 回复</small></li>
+								<li><a href="#">topic - 8</a><small>2 回复</small></li>
+								<li><a href="#">topic - 9</a><small>2 回复</small></li>
+								<li><a href="#">topic - 10</a><small>2 回复</small></li>
+							</ul>
+						</div>
+					</div>
+				</div><!-- /.col-md-4 -->
+				<!-- talking-list -->
+				<div class="col-md-9">
+					<div class="panel panel-default">
+						<div class="panel-body">
+							<div class="container-fluid">
+								<h3 class="talking-title">论雷峰塔的倒塌 <small class="author"><span class="glyphicon glyphicon-user"></span> <span class="name">鲁迅</span> <span class="glyphicon glyphicon-comment"></span> <span class="comment-num">123</span> <span class="glyphicon glyphicon-time"></span> 12 小时前 发布</small></h3>
+								<hr />
+							</div><!-- /.container-fluid -->
+							<div class="container-fluid talking-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum reiciendis, temporibus iure repellendus, sit cumque perspiciatis quidem, delectus rem, deleniti voluptate. Ipsam harum assumenda pariatur ab. Officiis suscipit, velit amet.</p>
+								<p>Corporis similique, ut. Corporis unde voluptas eaque sit voluptates cumque quo cupiditate, beatae doloribus ea tenetur est maxime obcaecati laboriosam ab minima, voluptatum quod repellat enim nobis quaerat ipsa itaque?</p>
+								<p>Adipisci optio corporis, sapiente, minus assumenda id delectus nobis, ut dignissimos facilis vel quaerat aliquam dolor dolorum quisquam voluptatem! Ex asperiores est accusamus quae vero dolor expedita quia, rerum harum.</p>
+								<p>Voluptate, animi architecto quibusdam praesentium perspiciatis dignissimos, voluptates et nesciunt, nemo optio nam obcaecati ratione quisquam voluptas ex ipsa vero suscipit alias consequuntur fugit dolor. Quae amet, nihil. Reprehenderit, doloremque.</p>
+								<p>Qui quidem amet accusantium eos deserunt aut explicabo ratione alias reprehenderit at facilis distinctio, velit culpa quod eius eveniet, similique, modi consequuntur! Quaerat aut, perspiciatis iusto itaque hic ut. Maiores.</p>
+								<p>Esse porro, suscipit eum ullam ab cumque a quam aperiam sequi, at aliquid eos velit maxime maiores blanditiis explicabo et ipsam quia! Perferendis quia dolorem dicta qui tempora reiciendis eius.</p>
+								<p>Explicabo inventore animi saepe, ad in hic, fugit molestias eum ipsam temporibus recusandae error labore perspiciatis accusamus deleniti minus? Voluptatibus veritatis quibusdam aperiam sunt sequi nisi temporibus qui blanditiis amet.</p>
+								<p>Et deleniti hic nemo voluptatem consectetur ipsa, at corporis quibusdam esse laudantium vel cumque voluptatibus perspiciatis aliquam, dolorem nisi rerum, inventore quis ea. Error in iusto, a ipsam soluta nostrum.</p>
+								<p>Quidem dignissimos, velit? Repellat iste ut voluptatum alias cupiditate ipsa deserunt iure laborum nulla animi nam, reprehenderit temporibus enim natus tempora, doloremque veritatis a commodi, explicabo accusamus non perferendis consequuntur.</p>
+								<p>Mollitia fugiat perspiciatis nesciunt tempora labore ea maxime provident, cumque asperiores a dolorum sint? Aliquid eum ducimus illo recusandae ex atque odit, modi. Dolores sunt totam dolorem maiores porro veniam.</p>
+								<p>Ut placeat assumenda iste voluptatum eligendi doloremque impedit expedita non est officia? Excepturi autem, veritatis dolore, quas voluptates rem amet, fuga cupiditate molestiae iusto dolores omnis quam? Dolorem quos, doloremque?</p>
+								<p>Ea alias neque provident accusamus quas? Dolore pariatur, iusto voluptatem aliquid, nobis in repudiandae, soluta ex assumenda aspernatur exercitationem a aliquam vel reiciendis recusandae expedita dolores. Rerum dolorem, sed rem.</p>
+							</div><!-- /.talking-body -->
+							<div class="container-fluid talking-body-things">
+								<a href="#" class="label lable-success talking-tag">sdfa</a>
+							</div><!-- /.talking-body-things -->
+							<div class="container-fluid">
+								<ul class="talking-func">
+									<li><a href="#">链接</a></li>
+									<li><a href="#">1 评论</a></li>
+									<li><a href="#">举报</a></li>
+								</ul>
+							</div>
+							<div class="container-fluid talking-comments">
+								<div class="talking-comment-title">
+									<h3>123 条回复</h3>
+									<hr>
+								</div>
+								<div class="talking-comments-content">
+									<div class="media comment">
+										<a class="media-left comment-img" href="#">
+											<img src="images/no-image_64x64.jpg" alt="kenneth">
+										</a><!-- /.comment-img -->
+										<div class="media-body comment-body">
+											<h4 class="media-heading comment-heading"><a href="#">kenneth</a> <small>7 小时前</small></h4>
+											<p>这文章太尼玛好看了！！！！！这文章太尼玛好看了！！！！！这文章太尼玛好看了！！！！！这文章太尼玛好看了！！！！！这文章太尼玛好看了！！！！！这文章太尼玛好看了！！！！！这文章太尼玛好看了！！！！！这文章太尼玛好看了！！！！！这文章太尼玛好看了！！！！！这文章太尼玛好看了！！！！！这文章太尼玛好看了！！！！！这文章太尼玛好看了！！！！！这文章太尼玛好看了！！！！！这文章太尼玛好看了！！！！！这文章太尼玛好看了！！！！！这文章太尼玛好看了！！！！！</p>
+											<ul class="talking-func">
+												<li><a href="#">链接</a></li>
+												<li><a href="#">1 回复</a></li>
+												<li><a href="#">举报</a></li>
+											</ul>
+											
+											<div class="media reply-comment">
+												<hr class="dotted">
+												<div class="media-body comment-body">
+													<h4 class="media-heading comment-heading">#1 <a href="#">sherylynn</a> reply <a href="#">kenneth</a> <small>7 小时前</small></h4>
+													<p>都不知道有啥好看</p>
+													<ul class="talking-func">
+														<li><a href="#">回复</a></li>
+														<li><a href="#">举报</a></li>
+													</ul>
+												</div><!-- /.comment-body -->
+											</div><!-- /.comment -->
+										</div><!-- /.comment-body -->
+										<hr>
+									</div><!-- /.comment -->
+									<div class="add-comment">
+										<h3><b>撰写回复</b></h3>
+										<form action="">
+											<textarea class="form-control" rows="5"></textarea>
+											<div class="comment-submit pull-right">
+												<button type="submit" class="btn btn-success">送出回复</button>
+											</div>
+										</form>
+									</div>
+								</div><!-- /.talking-comments-content -->
+							</div><!-- /.talking-comments -->
+						</div><!-- /.panel-body -->
+					</div>
+				</div><!-- /.col-md-4 -->
+			</div><!-- /.row -->
+		</div><!-- /.middle-content -->
+
+		<!-- footer -->
+		<footer class="jsbook-footer" role="contentinfo">
+			<div class="container text-center">
+				<p>Front by <a href="http://weibo.cn/kenslife" target="_blank">@Kenneth</a>, System by <a href="http://weibo.cn/kenslife" target="_blank">@Sherylynn</a>.</p>
+				<p>前端使用 Bootstrap 快速开发，<a href="http://www.bootcss.com/" target="_blank">Bootstrap中文网</a>。</p>
+				<p>后台使用 NodeJs 强力驱动</p>
+				<p></p>
+				<p>当前版本：v0.0.1 · <a href="http://www.bootcss.com/" target="_blank">GitHub 代码仓库</a> · <a href="http://www.bootcss.com/" target="_blank">使用手册</a> · <a href="http://www.bootcss.com/" target="_blank">关于开发者</a> · <a href="http://www.bootcss.com/" target="_blank">讨论组</a>
+				</p>
+			</div>
+		</footer><!-- /.footer -->
+
+		<!-- jQuery文件。务必在bootstrap.min.js 之前引入 
+		<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>-->
+		<!-- 最新的 Bootstrap 核心 JavaScript 文件 
+		<script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>

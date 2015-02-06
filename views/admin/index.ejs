@@ -1,0 +1,132 @@
+<%- include header %>
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span> 主页</a></li>
+					<li><a href="ad-book.html"><span class="glyphicon glyphicon-book"></span> 书籍管理</a></li>
+					<li><a href="ad-user.html"><span class="glyphicon glyphicon-user"></span> 用户管理</a></li>
+					<li><a href="ad-talk.html"><span class="glyphicon glyphicon-comment"></span> 讨论组管理</a></li>
+					<li><a href="ad-chat.html"><span class="glyphicon glyphicon-bullhorn"></span> 聊天管理</a></li>
+					<li><a href="ad-other.html"><span class="glyphicon glyphicon-cog"></span> 其他设置</a></li>
+				</ul>
+
+				<!-- right -->
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<form class="navbar-form" role="search">
+							<div class="form-group">
+								<div class="input-group">
+									<input type="text" class="form-control" placeholder="Book Search">
+									<span class="input-group-btn">
+										<button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+									</span>
+								</div>
+							</div>
+						</form>
+					</li>
+					<li><a href="#"><span class="glyphicon glyphicon-off"></span> 退出</a></li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+			</div><!-- /.container -->
+		</nav>
+		<!-- /.header -->
+
+		<!-- middle-content -->
+		<div class="container-fluid middle-content">
+				<div class="row">
+					<div class="col-sm-3 col-md-2 sidebar">
+						<ul class="nav nav-sidebar">
+							<li class="active"><a href="#"><span class="glyphicon glyphicon-stats"></span> 概览</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-cog"></span> 系统设置</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-cog"></span> 其他设置</a></li>
+						</ul>
+						<ul class="nav nav-sidebar">
+							<li><a href="ad-book-list.html"><span class="glyphicon glyphicon-book"></span> 书籍列表</a></li>
+							<li><a href="ad-book-add.html"><span class="glyphicon glyphicon-plus"></span> 添加书籍</a></li>
+						</ul>
+						<ul class="nav nav-sidebar">
+							<li><a href="ad-user-list.html"><span class="glyphicon glyphicon-user"></span> 用户列表</a></li>
+							<li><a href="ad-user-add.html"><span class="glyphicon glyphicon-plus"></span> 添加用户</a></li>
+						</ul>
+						<ul class="nav nav-sidebar">
+							<li><a href="#"><span class="glyphicon glyphicon-comment"></span> 讨论列表</a></li>
+						</ul>
+					</div><!-- /.sidebar -->
+					<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+						<h1 class="page-header">概览</h1>
+						<div class="row">
+							<div class="col-sm-4 col-md-4">
+								<ul><h3>书籍</h3>
+									<li>总书籍量：<span class="count-book">128</span> 本</li>
+									<li>可借图书：<span class="in-book">99</span> 本</li>
+									<li>已经借出：<span class="out-book">29</span> 本</li>
+								</ul>
+							</div>
+							<div class="col-sm-4 col-md-4">
+								<ul><h3>用户</h3>
+									<li>总用户数：<span class="count-user"><%- users.length%></span> 人</li>
+									<li>在线人数：<span class="count-online">3</span> 人</li>
+									<li>关小黑屋：<span class="count-blacklist">10</span> 人</li>
+								</ul>
+							</div>
+							<div class="col-sm-4 col-md-4">
+								<ul><h3>讨论</h3>
+									<li>总讨论数：<span class="count-blacklist">310</span> 帖</li>
+									<li>总回复数：<span class="count-blacklist">450</span> 帖</li>
+									<li>关闭帖数：<span class="count-blacklist">10</span> 帖</li>
+								</ul>
+							</div>
+						</div>
+						<h2 class="sub-header">热门书籍 - hot dogs</h2>
+						<div class="table-responsive">
+							<table class="table table-striped">
+								<thead>
+									<tr>
+										<th>#</th>
+										<th>缩略图</th>
+										<th>书名</th>
+										<th>作者</th>
+										<th>状态</th>
+									</tr>	
+								</thead>
+								<tbody>
+									<tr>
+										<td>2001</td>
+										<td>无</td>
+										<td>各种书籍</td>
+										<td>kenneth</td>
+										<td>1 本可借</td>
+									</tr>
+									<tr>
+										<td>2001</td>
+										<td>无</td>
+										<td>各种书籍</td>
+										<td>kenneth</td>
+										<td>1 本可借</td>
+									</tr>
+									<tr>
+										<td>2001</td>
+										<td>无</td>
+										<td>各种书籍</td>
+										<td>kenneth</td>
+										<td>1 本可借</td>
+									</tr>
+									<tr>
+										<td>2001</td>
+										<td>无</td>
+										<td>各种书籍</td>
+										<td>kenneth</td>
+										<td>1 本可借</td>
+									</tr>
+									<tr>
+										<td>2001</td>
+										<td>无</td>
+										<td>各种书籍</td>
+										<td>kenneth</td>
+										<td>1 本可借</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div><!-- /.row -->
+		</div><!-- /.middle-content -->
+<%- include footer %>

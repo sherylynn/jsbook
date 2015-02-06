@@ -1,0 +1,103 @@
+<%- include header %>
+            <ul class="nav navbar-nav">
+                <li><a href="index.html"><span class="glyphicon glyphicon-home"></span> 主页</a></li>
+                <li><a href="ad-book.html"><span class="glyphicon glyphicon-book"></span> 书籍管理</a></li>
+                <li class="active"><a href="ad-user.html"><span class="glyphicon glyphicon-user"></span> 用户管理</a></li>
+                <li><a href="ad-talk.html"><span class="glyphicon glyphicon-comment"></span> 讨论组管理</a></li>
+                <li><a href="ad-chat.html"><span class="glyphicon glyphicon-bullhorn"></span> 聊天管理</a></li>
+                <li><a href="ad-other.html"><span class="glyphicon glyphicon-cog"></span> 其他设置</a></li>
+            </ul>
+
+            <!-- right -->
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <form class="navbar-form" role="search">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Book Search">
+									<span class="input-group-btn">
+										<button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+									</span>
+                            </div>
+                        </div>
+                    </form>
+                </li>
+                <li><a href="#"><span class="glyphicon glyphicon-off"></span> 退出</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container -->
+</nav>
+<!-- /.header -->
+
+<!-- middle-content -->
+<div class="container-fluid middle-content">
+    <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+            <ul class="nav nav-sidebar">
+                <li class="active"><a href="ad-user.html"><span class="glyphicon glyphicon-stats"></span> 用户概览</a></li>
+            </ul>
+            <ul class="nav nav-sidebar">
+                <li><a href="ad-user-list.html"><span class="glyphicon glyphicon-user"></span> 用户列表</a></li>
+                <li><a href="ad-user-add.html"><span class="glyphicon glyphicon-plus"></span> 添加用户</a></li>
+            </ul>
+        </div><!-- /.sidebar -->
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+            <h1 class="page-header">概览</h1>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item">用户总数 <span class="badge badge-info"><%- users.length%></span></a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item">在线用户 <span class="badge badge-success">100</span></a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item">日访问量 <span class="badge badge-warning">100</span></a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item">日注册数 <span class="badge badge-danger">100</span></a>
+                    </div>
+                </div>
+            </div>
+            <h1 class="page-header">在线用户</h1>
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>用户名</th>
+                        <th>邮箱</th>
+                        <th>最后登陆时间</th>
+                        <th>IP地址</th>
+                        <th>操作</th>
+                    </tr>
+                    </thead>
+                    <% for ( n in users ) {%>
+
+                    <tbody>
+                    <tr>
+                        <td><%- n %></td>
+                        <td><%- users[n]['name'] %></td>
+                        <!--<th>地址</th>-->
+                        <!--<td>1097781818</td>-->
+                        <!--<td>20203010</td>-->
+                        <td>352281674@qq.com</td>
+                        <td>2015-01-13 22:22</td>
+                        <td>192.168.1.123</td>
+                        <td><a href="#" class="btn btn-xs btn-warning"><span class="glyphicon glyphicon-user"></span> 查</a> <a href="#" class="btn btn-xs btn-danger"><span class="glyphicon glyphicon-remove"></span> 下</a></td>
+                    </tr>
+                    </tbody>
+
+                    <% } %>
+                </table>
+            </div>
+        </div><!-- /.col-sm-9 -->
+    </div><!-- /.row -->
+</div><!-- /.middle-content -->
+<%- include footer %>

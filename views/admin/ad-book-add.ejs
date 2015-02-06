@@ -1,0 +1,179 @@
+<%- include header %>	
+				<ul class="nav navbar-nav">
+					<li><a href="index.html"><span class="glyphicon glyphicon-home"></span> 主页</a></li>
+					<li class="active"><a href="ad-book.html"><span class="glyphicon glyphicon-book"></span> 书籍管理</a></li>
+					<li><a href="ad-user.html"><span class="glyphicon glyphicon-user"></span> 用户管理</a></li>
+					<li><a href="ad-talk.html"><span class="glyphicon glyphicon-comment"></span> 讨论组管理</a></li>
+					<li><a href="ad-chat.html"><span class="glyphicon glyphicon-bullhorn"></span> 聊天管理</a></li>
+					<li><a href="ad-other.html"><span class="glyphicon glyphicon-cog"></span> 其他设置</a></li>
+				</ul>
+
+				<!-- right -->
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<form class="navbar-form" role="search">
+							<div class="form-group">
+								<div class="input-group">
+									<input type="text" class="form-control" placeholder="Book Search">
+									<span class="input-group-btn">
+										<button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+									</span>
+								</div>
+							</div>
+						</form>
+					</li>
+					<li><a href="#"><span class="glyphicon glyphicon-off"></span> 退出</a></li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+			</div><!-- /.container -->
+		</nav>
+		<!-- /.header -->
+
+		<!-- middle-content -->
+		<div class="container-fluid middle-content">
+				<div class="row">
+					<div class="col-sm-3 col-md-2 sidebar">
+						<ul class="nav nav-sidebar">
+							<li><a href="ad-book.html"><span class="glyphicon glyphicon-stats"></span> 书籍概览</a></li>
+							<li><a href="ad-book-list.html"><span class="glyphicon glyphicon-book"></span> 书籍列表</a></li>
+						</ul>
+						<ul class="nav nav-sidebar">
+							<li class="active"><a href="ad-book-add.html"><span class="glyphicon glyphicon-plus"></span> 添加书籍</a></li>
+							<li><a href="ad-book-star.html"><span class="glyphicon glyphicon-star"></span> 推荐列表</a></li>
+						</ul>
+					</div><!-- /.sidebar -->
+					<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+						<h1 class="page-header">添加书籍</h1>
+						<div class="row">
+							<form class="form-horizontal" action="/admin/ad-book-add.html" role="book-add-form" method="post">
+								<!-- book name -->
+								<div class="form-group">
+									<label for="book-name" class="col-sm-2 control-label">书名<span style="font-weight:bold;color:red;">*</span></label>
+									<div class="col-sm-5">
+										<input type="text" name="name" id="inputBookName" placeholder="Book Name" class="form-control">
+									</div>
+								</div>
+								<!-- author -->
+								<div class="form-group">
+									<label for="author" class="col-sm-2 control-label">作者<span style="font-weight:bold;color:red;">*</span></label>
+									<div class="col-sm-5">
+										<input type="text" name="author" id="inputAuthor" placeholder="Author" class="form-control">
+									</div>
+								</div>
+								<!-- from -->
+								<div class="form-group">
+									<label for="press" class="col-sm-2 control-label">出版社<span style="font-weight:bold;color:red;">*</span></label>
+									<div class="col-sm-5">
+										<input type="text" name="from" id="inputPress" placeholder="Press" class="form-control">
+									</div>
+								</div>
+								<!-- code owner
+								<div class="form-group">
+									<label for="number" class="col-sm-2 control-label">编号<span style="font-weight:bold;color:red;">*</span></label>
+									<div class="col-sm-5">
+										<input type="text" name="Number" id="inputNumber" placeholder="Number" class="form-control">
+									</div>
+								</div>
+								-->
+								<!-- owner -->
+								<div class="form-group">
+									<label for="owner" class="col-sm-2 control-label">归属人<span style="font-weight:bold;color:red;">*</span></label>
+									<div class="col-sm-5">
+										<input type="text" name="owner" id="inputOwner" placeholder="Owner" class="form-control">
+									</div>
+								</div>
+								<hr>
+
+								<!-- ISBN -->
+								<div class="form-group">
+									<label for="isbn" class="col-sm-2 control-label">ISBN<span style="font-weight:bold;color:red;">*</span></label>
+									<div class="col-sm-5">
+										<input type="text" name="ISBN" id="inputISBN" placeholder="ISBN" class="form-control">
+									</div>
+								</div>
+								<!-- stock -->
+								<div class="form-group">
+									<label for="quantity" class="col-sm-2 control-label">数量<span style="font-weight:bold;color:red;">*</span></label>
+									<div class="col-sm-5">
+										<input type="text" name="stock" id="inputQuantity" placeholder="Quantity" class="form-control">
+									</div>
+								</div>
+								<!-- location
+								<div class="form-group">
+									<label for="location" class="col-sm-2 control-label">位置<span style="font-weight:bold;color:red;">*</span></label>
+									<div class="col-sm-2">
+										<select name="location-a" id="selectLocation-a" class="form-control">
+											<option value="1">1楼 - 科技阅览室</option>
+											<option value="2">1楼 - 各种阅览室</option>
+											<option value="3">2楼 - 垃圾阅览室</option>
+										</select>
+									</div>
+									<div class="col-sm-2">
+										<select name="location-a" id="selectLocation-a" class="form-control">
+											<option value="1">A书架</option>
+											<option value="2">B书架</option>
+											<option value="3">C书架</option>
+										</select>
+									</div>
+									<div class="col-sm-2">
+										<select name="location-a" id="selectLocation-b" class="form-control">
+											<option value="1">1层</option>
+											<option value="2">2层</option>
+											<option value="3">3层</option>
+											<option value="4">4层</option>
+										</select>
+									</div>
+								</div>
+								-->
+								<!-- tags -->
+								<div class="form-group">
+									<label for="tags" class="col-sm-2 control-label">标签<span style="font-weight:bold;color:red;">*</span></label>
+									<div class="col-sm-5">
+										<input type="text" name="Tags" id="inputTags" placeholder="Tags" class="form-control" rows="3" style="resize: none;">
+									</div>
+									<div class="col-sm-5">逗号隔开，如：文学,教育</div>
+								</div>
+								<hr>
+								<!-- summary -->
+								<div class="form-group">
+									<label for="summary" class="col-sm-2 control-label">简介<span style="font-weight:bold;color:red;">*</span></label>
+									<div class="col-sm-5">
+										<textarea name="Summary" id="textareaSummary" placeholder="Summary" class="form-control" rows="3" style="resize: none;"></textarea>
+									</div>
+								</div>
+								<!-- information -->
+								<div class="form-group">
+									<label for="information" class="col-sm-2 control-label">基本信息<span style="font-weight:bold;color:red;">*</span></label>
+									<div class="col-sm-5">
+										<textarea name="information" id="textareaInformation" placeholder="Information" class="form-control" rows="11">
+出版社：
+平装：
+语种：
+开本：
+ISBN：
+条形码：
+商品尺寸：
+商品重量：
+品牌：
+ASIN：
+										</textarea>
+									</div>
+								</div>
+								<!-- description -->
+								<div class="form-group">
+									<label for="description" class="col-sm-2 control-label">图书描述<span style="font-weight:bold;color:red;">*</span></label>
+									<div class="col-sm-8">
+										<textarea name="description" id="textareadescription" placeholder="Description" class="form-control" rows="11"></textarea>
+									</div>
+								</div>
+								<hr>
+								<div class="text-center">
+									<button type="submit" class="btn btn-success btn-lg">提交</button>
+									<button type="reset" class="btn btn-default btn-lg">重置</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div><!-- /.row -->
+		</div><!-- /.middle-content -->
+<%- include footer %>

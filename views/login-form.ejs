@@ -1,0 +1,54 @@
+				<!-- Login panel -->
+				<% if(user){ %>
+					<div class="panel panel-info">
+						<div class="panel-heading">欢迎您！ - Welcome!</div>
+						<div class="panel-body">
+							<p><b>欢迎！</b><span class="user-name"><%= user.name %></span></p>
+							<p><b>最后登陆：</b><span class="last-time">2014-12-27 23:00</span></p>
+							<% if (error) { %>
+								<div class="alert alert-danger alert-dismissible" role="alert">
+									<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+									<strong>不好意思！</strong><%= error %>
+								</div>
+							<% } %>
+							<a href="#" class="btn btn-success">个人信息</a>
+							<a href="/logout" class="btn btn-warning">登出</a>
+							<a href="/admin" class="btn btn-danger">管理</a>
+						</div>
+					</div>
+				<% }else { %>
+					<div class="panel panel-success">
+						<div class="panel-heading text-center">登陆 - Login</div>
+						<div class="panel-body">
+							<form role="form" method="post" action="/login">
+								<div class="form-group">
+									<label for="inputUsername">用户名 - Username</label>
+									<input type="text" class="form-control" id="inputUsername" placeholder="Username" name="name">
+								</div>
+								<div class="form-group">
+									<label for="inputPassword">密码 - Password</label>
+									<input type="password" class="form-control" id="inputPassword" placeholder="Password" name="password">
+								</div>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox"> 自动登录 - Cookie it
+									</label>
+								</div>
+								<% if (error) { %>
+									<div class="alert alert-danger alert-dismissible" role="alert">
+										<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+										<strong>不好意思！</strong><%= error %>
+									</div>
+								<% } %>
+								<% if (success) { %>
+									<div class="alert alert-success alert-dismissible" role="alert">
+										<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+										<strong>恭喜！</strong><%= success %>
+									</div>
+								<% } %>
+								<button type="submit" class="btn btn-primary">登陆 - Login</button> or <a href="/reg" class="btn btn-info">注册 - Registration</a>
+							</form>
+						</div><!-- /.panel-body -->
+					</div><!-- /.panel -->
+				<% } %>
+					

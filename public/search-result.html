@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>JSBook 杰尚书籍管理系统 ---- 超轻量级应用 ---- 透心凉 心飞扬</title>
+		<!-- 新 Bootstrap 核心 CSS 文件 
+		<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">-->
+		<!-- 可选的Bootstrap主题文件（一般不用引入） 
+		<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">-->
+
+		<!-- 暂时使用本地文件 -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- <link rel="stylesheet" href="css/bootstrap-theme.min.css"> -->
+		<link rel="stylesheet" href="css/style.css">
+		
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	
+	<body>
+		<!-- navigation -->
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#jsbook-navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">JSBook 杰尚书籍管理系统</a>
+				</div>
+
+				<!-- collapse -->
+				<div class="collapse navbar-collapse" id="jsbook-navbar">
+					<!-- left -->
+					<ul class="nav navbar-nav">
+						<li><a href="index.html">主页</a></li>
+						<li><a href="login.html">登陆</a></li>
+						<li class="active"><a href="booklist.html">书籍列表</a></li>
+						<li><a href="download.html">下载</a></li>
+						<li><a href="bbs.html">论坛</a></li>
+						<li><a href="talking.html">聊天</a></li>
+						<li><a href="chat.html">讨论</a></li>
+					</ul>
+
+					<!-- right -->
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<form class="navbar-form" role="search">
+								<div class="form-group">
+									<div class="input-group">
+										<input type="text" class="form-control" placeholder="Book Search">
+										<div class="input-group-addon"><button type="submit" class="btn-search"><span class="glyphicon glyphicon-search"></span></button></div>
+									</div>
+								</div>
+							</form>
+						</li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container -->
+		</nav>
+		<!-- /.header -->
+
+		<!-- middle-content -->
+		<div class="container middle-content">
+			<div class="row">
+				<!-- breadcrumb -->
+				<ol class="breadcrumb">
+					<li><a href="#">主页</a></li>
+					<li class="active">搜索</li>
+				</ol>
+				<!-- search-panel -->
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<h1 class="text-center">JSBook 杰尚书籍管理系统 - 书籍搜索器<small>beta</small></h1>
+						<p class="text-muted text-center">这是一款功能强大但使用方便的书籍搜索引擎！您可以使用诸如：ISBN、书名、作者、分类、标签等信息对在库书籍进行检索！</p>
+						<form action="#" class="form-horizontal" role="single-page-search">
+							<div class="form-group">
+								<label for="Keywords" class="col-sm-4 col-md-4 control-label text-right">关键词：</label>
+								<div class="col-sm-4 col-md-4">
+									<input type="email" class="form-control" id="Keywords" placeholder="ISBN、书名、作者、分类、标签等">
+								</div>
+								<div class="col-sm-4 col-md-4">
+									<button type="submit" class="btn btn-primary">提交</button>
+								</div>
+							</div>
+							<div class="col-md-6 col-md-offset-3">
+								<label>
+									<input type="checkbox" id="type" value="1" checked="1"> ISBN 
+								</label>
+								<label>
+									<input type="checkbox" id="type" value="2" checked="1"> 书名 
+								</label>
+								<label>
+									<input type="checkbox" id="type" value="3" checked="1"> 作者 
+								</label>
+								<label>
+									<input type="checkbox" id="type" value="4" checked="1"> 分类 
+								</label>
+								<label>
+									<input type="checkbox" id="type" value="5" checked="1"> 标签 
+								</label>
+								<span class="text-muted"> - 使用关键词过滤结果更加精准！</span>
+							</div>
+						</form>
+					</div>
+				</div><!-- /.panel -->
+				<div class="panel panel-info">
+					<div class="panel-heading text-center">搜索结果 - Search Result</div>
+					<div class="panel-body">
+						<h1 class="text-center">没有找到结果</h1>
+						<ul class="media-list">
+							<!-- 一本书的开始 -->
+							<li class="media book-block">
+								<a class="media-left" href="#">
+									<img src="images/no-image_64x64.jpg" alt="..." width="128" height="128">
+								</a>
+								<div class="media-body">
+									<h3 class="media-heading"><span class="glyphicon glyphicon-book"></span> <a href="#">论演员的自我修养</a><small>作者：<a href="#">kenneth</a></small></h3>
+									<h5>标签：<a href="#" class="label label-primary">kenneth</a> <a href="#" class="label label-primary">fuck</a></h5>
+									<h5>分类：<a href="#">分类</a> &raquo; <a href="#">分类</a></h5>
+									<h5>状态：<a href="#" class="btn btn-success">4 本可借</a></h5>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad cupiditate, perferendis nesciunt, commodi molestias necessitatibus vero soluta fugit nam corrupti voluptatum accusamus asperiores magnam. Velit, omnis eos possimus molestiae distinctio!</p>
+									<p>Quaerat deserunt quod cum aperiam numquam voluptas quas, eos, ex consectetur veritatis nulla labore culpa nemo, nam itaque cumque aut. Vero ad atque, iure quam velit asperiores dolor harum corporis!</p>
+								</div>
+								<hr />
+							</li><!-- 一本书的结束 -->
+							<!-- 一本书的开始 -->
+							<li class="media book-block">
+								<a class="media-left" href="#">
+									<img src="images/no-image_64x64.jpg" alt="..." width="128" height="128">
+								</a>
+								<div class="media-body">
+									<h3 class="media-heading"><span class="glyphicon glyphicon-book"></span> <a href="#">论演员的自我修养</a><small>作者：<a href="#">kenneth</a></small></h3>
+									<h5>标签：<a href="#" class="label label-primary">kenneth</a> <a href="#" class="label label-primary">fuck</a></h5>
+									<h5>分类：<a href="#">分类</a> &raquo; <a href="#">分类</a></h5>
+									<h5>状态：<a href="#" class="btn btn-success">4 本可借</a></h5>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad cupiditate, perferendis nesciunt, commodi molestias necessitatibus vero soluta fugit nam corrupti voluptatum accusamus asperiores magnam. Velit, omnis eos possimus molestiae distinctio!</p>
+									<p>Quaerat deserunt quod cum aperiam numquam voluptas quas, eos, ex consectetur veritatis nulla labore culpa nemo, nam itaque cumque aut. Vero ad atque, iure quam velit asperiores dolor harum corporis!</p>
+								</div>
+								<hr />
+							</li><!-- 一本书的结束 -->
+							<!-- 一本书的开始 -->
+							<li class="media book-block">
+								<a class="media-left" href="#">
+									<img src="images/no-image_64x64.jpg" alt="..." width="128" height="128">
+								</a>
+								<div class="media-body">
+									<h3 class="media-heading"><span class="glyphicon glyphicon-book"></span> <a href="#">论演员的自我修养</a><small>作者：<a href="#">kenneth</a></small></h3>
+									<h5>标签：<a href="#" class="label label-primary">kenneth</a> <a href="#" class="label label-primary">fuck</a></h5>
+									<h5>分类：<a href="#">分类</a> &raquo; <a href="#">分类</a></h5>
+									<h5>状态：<a href="#" class="btn btn-success">4 本可借</a></h5>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad cupiditate, perferendis nesciunt, commodi molestias necessitatibus vero soluta fugit nam corrupti voluptatum accusamus asperiores magnam. Velit, omnis eos possimus molestiae distinctio!</p>
+									<p>Quaerat deserunt quod cum aperiam numquam voluptas quas, eos, ex consectetur veritatis nulla labore culpa nemo, nam itaque cumque aut. Vero ad atque, iure quam velit asperiores dolor harum corporis!</p>
+								</div>
+								<hr />
+							</li><!-- 一本书的结束 -->
+							<!-- 一本书的开始 -->
+							<li class="media book-block">
+								<a class="media-left" href="#">
+									<img src="images/no-image_64x64.jpg" alt="..." width="128" height="128">
+								</a>
+								<div class="media-body">
+									<h3 class="media-heading"><span class="glyphicon glyphicon-book"></span> <a href="#">论演员的自我修养</a><small>作者：<a href="#">kenneth</a></small></h3>
+									<h5>标签：<a href="#" class="label label-primary">kenneth</a> <a href="#" class="label label-primary">fuck</a></h5>
+									<h5>分类：<a href="#">分类</a> &raquo; <a href="#">分类</a></h5>
+									<h5>状态：<a href="#" class="btn btn-success">4 本可借</a></h5>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad cupiditate, perferendis nesciunt, commodi molestias necessitatibus vero soluta fugit nam corrupti voluptatum accusamus asperiores magnam. Velit, omnis eos possimus molestiae distinctio!</p>
+									<p>Quaerat deserunt quod cum aperiam numquam voluptas quas, eos, ex consectetur veritatis nulla labore culpa nemo, nam itaque cumque aut. Vero ad atque, iure quam velit asperiores dolor harum corporis!</p>
+								</div>
+								<hr />
+							</li><!-- 一本书的结束 -->
+						</ul><!-- /.media-list -->
+						<div class="text-center">
+							<nav>
+								<ul class="pagination">
+									<li><a href="#">&laquo; 上一页</a></li>
+									<li class="active"><a href="#">1</a></li>
+									<li><a href="#">2</a></li>
+									<li><a href="#">3</a></li>
+									<li><a href="#">4</a></li>
+									<li><a href="#">5</a></li>
+									<li><a href="#">下一页 &raquo;</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div><!-- /.panel-body -->
+				</div><!-- /.panel -->
+			</div><!-- /.row -->
+		</div><!-- /.middle-content -->
+
+		<!-- footer -->
+		<footer class="jsbook-footer" role="contentinfo">
+			<div class="container text-center">
+				<p>Front by <a href="http://weibo.cn/kenslife" target="_blank">@Kenneth</a>, System by <a href="http://weibo.cn/kenslife" target="_blank">@Sherylynn</a>.</p>
+				<p>前端使用 Bootstrap 快速开发，<a href="http://www.bootcss.com/" target="_blank">Bootstrap中文网</a>。</p>
+				<p>后台使用 NodeJs 强力驱动</p>
+				<p></p>
+				<p>当前版本：v0.0.1 · <a href="http://www.bootcss.com/" target="_blank">GitHub 代码仓库</a> · <a href="http://www.bootcss.com/" target="_blank">使用手册</a> · <a href="http://www.bootcss.com/" target="_blank">关于开发者</a> · <a href="http://www.bootcss.com/" target="_blank">讨论组</a>
+				</p>
+			</div>
+		</footer><!-- /.footer -->
+
+		<!-- jQuery文件。务必在bootstrap.min.js 之前引入 
+		<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>-->
+		<!-- 最新的 Bootstrap 核心 JavaScript 文件 
+		<script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>

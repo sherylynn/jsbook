@@ -1,0 +1,101 @@
+<%- include header.ejs %>
+            <ul class="nav navbar-nav">
+                <li><a href="index.html"><span class="glyphicon glyphicon-home"></span> 主页</a></li>
+                <li><a href="ad-book.html"><span class="glyphicon glyphicon-book"></span> 书籍管理</a></li>
+                <li class="active"><a href="ad-user.html"><span class="glyphicon glyphicon-user"></span> 用户管理</a></li>
+                <li><a href="ad-talk.html"><span class="glyphicon glyphicon-comment"></span> 讨论组管理</a></li>
+                <li><a href="ad-chat.html"><span class="glyphicon glyphicon-bullhorn"></span> 聊天管理</a></li>
+                <li><a href="ad-other.html"><span class="glyphicon glyphicon-cog"></span> 其他设置</a></li>
+            </ul>
+
+            <!-- right -->
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <form class="navbar-form" role="search">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Book Search">
+									<span class="input-group-btn">
+										<button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+									</span>
+                            </div>
+                        </div>
+                    </form>
+                </li>
+                <li><a href="#"><span class="glyphicon glyphicon-off"></span> 退出</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container -->
+</nav>
+<!-- /.header -->
+
+<!-- middle-content -->
+<div class="container-fluid middle-content">
+    <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+            <ul class="nav nav-sidebar">
+                <li><a href="ad-user.html"><span class="glyphicon glyphicon-stats"></span> 用户概览</a></li>
+            </ul>
+            <ul class="nav nav-sidebar">
+                <li><a href="ad-user-list.html"><span class="glyphicon glyphicon-user"></span> 用户列表</a></li>
+                <li class="active"><a href="ad-user-add.html"><span class="glyphicon glyphicon-plus"></span> 添加用户</a></li>
+            </ul>
+        </div><!-- /.sidebar -->
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+            <h1 class="page-header">添加用户</h1>
+            <form action="/reg" role="user-add-form" class="form-horizontal" method="post">
+                <div class="form-group">
+                    <!-- user name -->
+                    <label for="inputUserName" class="col-md-2 control-label">用户名<span style="font-weight:bold;color:red;">*</span></label>
+                    <div class="col-sm-4">
+                        <input type="text" name="name" id="inputUserName" placeholder="User Name" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <!-- password -->
+                    <label for="inputPassword" class="col-md-2 control-label">密码<span style="font-weight:bold;color:red;">*</span></label>
+                    <div class="col-sm-4">
+                        <input type="password" name="password" id="inputPassword" placeholder="Password" class="form-control">
+                    </div>
+                    <!-- password-repeat -->
+                    <label for="inputPassword-repeat" class="col-md-2 control-label">确认密码<span style="font-weight:bold;color:red;">*</span></label>
+                    <div class="col-sm-4">
+                        <input type="password" name="password-repeat" id="inputPassword" placeholder="Password" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputEmail" class="col-md-2 control-label">电邮<span style="font-weight:bold;color:red;">*</span></label>
+                    <div class="col-sm-4">
+                        <input type="text" name="email" id="inputEmail" placeholder="Email" class="form-control">
+                    </div>
+                    <label for="inputDepartment" class="col-md-2 control-label">部门<span style="font-weight:bold;color:red;">*</span></label>
+                    <div class="col-sm-4">
+                        <input type="text" name="department" id="inputDepartment" placeholder="Department" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputAddress" class="col-md-2 control-label">地址<span style="font-weight:bold;color:red;">*</span></label>
+                    <div class="col-sm-4">
+                        <input type="text" name="address" id="inputAddress" placeholder="Address" class="form-control">
+                    </div>
+                    <label for="inputQQ" class="col-md-2 control-label">QQ<span style="font-weight:bold;color:red;">*</span></label>
+                    <div class="col-sm-4">
+                        <input type="text" name="qq" id="inputQQ" placeholder="QQ" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputTelephone" class="col-md-2 control-label">手机<span style="font-weight:bold;color:red;">*</span></label>
+                    <div class="col-sm-4">
+                        <input type="text" name="telephone" id="inputTelephone" placeholder="Telephone" class="form-control">
+                    </div>
+                </div>
+                <hr />
+                <div class="form-group text-center">
+                    <button type="submit" class="btn btn-primary">提交</button>
+                    <button type="reset" class="btn btn-default">重置</button>
+                </div>
+            </form>
+        </div><!-- /.col-sm-9 -->
+    </div><!-- /.row -->
+</div><!-- /.middle-content -->
+<%- include footer %>

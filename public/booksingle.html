@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>JSBook 杰尚书籍管理系统 ---- 超轻量级应用 ---- 透心凉 心飞扬</title>
+		<!-- 新 Bootstrap 核心 CSS 文件 
+		<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">-->
+		<!-- 可选的Bootstrap主题文件（一般不用引入） 
+		<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">-->
+
+		<!-- 暂时使用本地文件 -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- <link rel="stylesheet" href="css/bootstrap-theme.min.css"> -->
+		<link rel="stylesheet" href="css/style.css">
+		
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	
+	<body>
+		<!-- navigation -->
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#jsbook-navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">JSBook 杰尚书籍管理系统</a>
+				</div>
+
+				<!-- collapse -->
+				<div class="collapse navbar-collapse" id="jsbook-navbar">
+					<!-- left -->
+					<ul class="nav navbar-nav">
+						<li><a href="index.html">主页</a></li>
+						<li><a href="login.html">登陆</a></li>
+						<li class="active"><a href="booklist.html">书籍列表</a></li>
+						<li><a href="download.html">下载</a></li>
+						<li><a href="bbs.html">论坛</a></li>
+						<li><a href="talking.html">聊天</a></li>
+						<li><a href="chat.html">讨论</a></li>
+					</ul>
+
+					<!-- right -->
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<form class="navbar-form" role="search">
+								<div class="form-group">
+									<div class="input-group">
+										<input type="text" class="form-control" placeholder="Book Search">
+										<div class="input-group-addon"><button type="submit" class="btn-search"><span class="glyphicon glyphicon-search"></span></button></div>
+									</div>
+								</div>
+							</form>
+						</li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container -->
+		</nav>
+		<!-- /.header -->
+
+		<!-- middle-content -->
+		<div class="container middle-content">
+			<div class="row">
+				<!-- breadcrumb -->
+				<ol class="breadcrumb">
+					<li><a href="#">主页</a></li>
+					<li><a href="#">分类</a></li>
+					<li class="active">书籍名称</li>
+				</ol>
+				<!-- login -->
+				<div class="col-md-4">
+					<div class="panel panel-info">
+						<div class="panel-heading">书籍分类 - Categories</div>
+						<div class="panel-body">
+							<ul>
+								<li>分类1
+									<ul>
+										<li>小分类1</li>
+										<li>小分类2</li>
+									</ul>
+								</li>
+								<li>分类2</li>
+								<li>分类3</li>
+								<li>分类4</li>
+							</ul>
+						</div><!-- /.panel-body -->
+					</div><!-- /.panel -->
+					<!-- recommended books panel -->
+					<div class="panel panel-default">
+						<div class="panel-heading">书目推荐 - Recommended Books</div>
+						<div class="panel-body rb-list">
+							<div class="media">
+								<a href="#" class="media-left"><img src="images/no-image_64x64.jpg" alt=""></a>
+								<div class="media-body">
+									<h4 class="media-heading">演员的自我修养<small>珍藏版</small></h4>
+									作者：斯坦尼斯拉夫斯基<br />
+									状态：<span class="label label-success">4 本可借</span>
+								</div>
+							</div>
+							<div class="media">
+								<a href="#" class="media-left"><img src="images/no-image_64x64.jpg" alt=""></a>
+								<div class="media-body">
+									<h4 class="media-heading">演员的自我修养2</h4>
+									作者：斯坦尼斯拉夫斯基<br />
+									状态：<span class="label label-warning">1 本可借</span>
+								</div>
+							</div>
+							<div class="media">
+								<a href="#" class="media-left"><img src="images/no-image_64x64.jpg" alt=""></a>
+								<div class="media-body">
+									<h4 class="media-heading">演员的自我修养3</h4>
+									作者：斯坦尼斯拉夫斯基<br />
+									状态：<span class="label label-danger">已经借完</span>
+								</div>
+							</div>
+							<div class="media">
+								<a href="#" class="media-left"><img src="images/no-image_64x64.jpg" alt=""></a>
+								<div class="media-body">
+									<h4 class="media-heading">演员的自我修养4<small>新书</small></h4>
+									作者：斯坦尼斯拉夫斯基<br />
+									状态：<span class="label label-default">暂不外借</span>
+								</div>
+							</div>
+							<div class="media">
+								<a href="#" class="media-left"><img src="images/no-image_64x64.jpg" alt=""></a>
+								<div class="media-body">
+									<h4 class="media-heading">演员的自我修养5</h4>
+									作者：斯坦尼斯拉夫斯基<br />
+									状态：<span class="label label-default">暂不外借</span>
+								</div>
+							</div>
+						</div><!-- /.rb-list -->
+					</div><!-- /.panel -->
+				</div><!-- /.col-md-4 -->
+				<!-- 404 -->
+				<div class="col-md-8">
+					<div class="panel panel-default">
+						<div class="panel-body">
+							<h1 class="book-title"><span class="glyphicon glyphicon-book"></span> 书籍名称<small>作者</small></h1>
+							<hr />
+							<div class="media">
+								<a href="#" class="media-left"><img class="img-rounded" src="images/no-image_64x64.jpg" alt="" width="200" height="200"></a>
+								<div class="media-body">
+									<h4 class="media-heading">简介：</h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est et voluptate labore non numquam quod at, accusamus necessitatibus, tenetur quos pariatur iusto. Eveniet molestiae obcaecati quo commodi at nisi repudiandae.</p>
+									<h4>标签：</h4>
+									<p>
+										<a href="#" class="tag"><span class="glyphicon glyphicon-tag"></span> 演员</a> 
+										<a href="#" class="tag"><span class="glyphicon glyphicon-tag"></span> 自我</a> 
+										<a href="#" class="tag"><span class="glyphicon glyphicon-tag"></span> 修养</a>
+									</p>
+									<h4>位置：3楼 - 科技阅览室 - 4号架 - Hj49203</h4>
+									<a href="#" role="borrow" class="btn btn-success">4 本可借</a>
+									<a href="#" role="collected" class="btn btn-default"><span class="glyphicon glyphicon-star-empty"></span> 收藏该书</a>
+									<a href="#" role="collected" class="btn btn-default"><span class="glyphicon glyphicon-thumbs-up"></span> 10</a>
+									<a href="#" role="collected" class="btn btn-default"><span class="glyphicon glyphicon-thumbs-down"></span> 0</a>
+								</div>
+								<!-- base-info -->
+								<div class="base-info">
+									<hr />
+									<h2>基本信息</h2>
+									<p>出版社：广西师范大学出版社；第1版（2015年1月1日）</p>
+									<p>平装：268页</p>
+									<p>语种：简体中文</p>
+									<p>开本：32</p>
+									<p>ISBN：9787549561032</p>
+									<p>条形码：9787549561032</p>
+									<p>商品尺寸：20.4 x 14.2 x 2 cm</p>
+									<p>商品重量：358 g</p>
+									<p>品牌：北京贝贝特</p>
+									<p>ASIN：B00QF1824E</p>
+								</div><!-- /.base-info -->
+								<div class="book-details">
+									<hr />
+									<h2>书籍描述</h2>
+									<h3>编辑推荐</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis exercitationem doloribus ipsa neque, dolore fuga voluptatum sequi vitae quis dicta architecto odio asperiores, tempora tempore delectus ipsam expedita vero. Architecto.</p>
+									<p>Voluptatibus, hic soluta itaque aliquam provident? Illum recusandae repudiandae sint molestiae beatae velit dolor, aliquam a laborum ex fugiat laudantium, natus, ducimus eaque reiciendis. Nobis, id, accusantium. Corporis facilis, voluptatibus.</p>
+									<h3>名人推荐</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione illo molestias repudiandae nesciunt, autem fugit tempora, cum tempore ullam eaque quisquam sint inventore laboriosam. Hic, sunt eaque nemo illum alias.</p>
+									<p>Minus distinctio dolore molestias iste harum ratione optio error nihil dolorum, dolor asperiores quasi id ut, dolores sit? Exercitationem ratione omnis, consequuntur iure praesentium quae quasi voluptatem labore. Ducimus, aut?</p>
+									<p>Esse corrupti necessitatibus cum ducimus sit sunt quibusdam. Provident quisquam deserunt ex amet saepe distinctio, voluptatem necessitatibus, eveniet velit consequuntur at inventore repellendus ab id perferendis? Assumenda numquam deserunt, earum!</p>
+								</div><!-- /.book-details -->
+								<div class="book-comments">
+									<hr />
+									<h2>图书评论</h2>
+									<ul class="media-list comment-block">
+										<li class="media comment-body"><!-- 一条评论 -->
+											<a href="#" class="media-left"><img src="images/no-image_64x64.jpg" alt=""></a>
+											<div class="media-body">
+												<h4 class="media-heading">kenneth @ 2014-12-22 21:04</h4>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident quas autem neque, sit, similique minus architecto ut quos eius fugit necessitatibus maxime saepe iure, soluta assumenda cupiditate iste, repellat veritatis.</p>
+												<p class="reply-it"><a href="#"><span class="glyphicon glyphicon-pencil"></span> 回复一下TA</a></p>
+												<ul class="media-list comment-block reply-block">
+													<li class="media"><!-- 一条回复 -->
+														<a href="#" class="media-left"><img src="images/no-image_64x64.jpg" alt=""></a>
+														<div class="media-body">
+															<h4 class="media-heading">sherylynn 回复：kenneth @ 2014-12-22 21:04</h4>
+															<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident quas autem neque, sit, similique minus architecto ut quos eius fugit necessitatibus maxime saepe iure, soluta assumenda cupiditate iste, repellat veritatis.</p>
+															<p class="reply-it"><a href="#"><span class="glyphicon glyphicon-pencil"></span> 回复一下TA</a></p>
+														</div>
+													</li><!-- 结束回复 -->
+												</ul>
+											</div>
+										</li><!-- 结束评论 -->
+										<li class="media comment-body"><!-- 一条评论 -->
+											<a href="#" class="media-left"><img src="images/no-image_64x64.jpg" alt=""></a>
+											<div class="media-body">
+												<h4 class="media-heading">sherylynn @ 2014-12-22 21:04</h4>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente eum quia ad ex! Dicta, asperiores nemo et, rem cupiditate doloremque reprehenderit aspernatur eaque, animi voluptate molestias perferendis quia, veniam dolore.</p>
+												<p class="reply-it"><a href="#"><span class="glyphicon glyphicon-pencil"></span> 回复一下TA</a></p>
+											</div>
+										</li><!-- 结束评论 -->
+									</ul><!-- /.comment-block -->
+								</div><!-- /.book-comments -->
+								<!-- write a comment -->
+								<div class="comment-it">
+									<hr />
+									<h2>撰写一个评论</h2>
+									<form role="form">
+										<div class="form-group">
+											<label for="writeComments">用户名：<a href="#">kenneth</a> <span class="reply-to">回复给：<a href="#">sherylynn</a></span></label>
+											<textarea class="form-control" rows="3" id="writeComments"></textarea>
+										</div>
+										<button type="submit" class="btn btn-primary">提交 - Submit</button>
+									</form>
+								</div>
+							</div><!-- /.media -->
+						</div><!-- /.panel-body -->
+					</div><!-- /.panel -->
+				</div><!-- /.col-md-8 -->
+			</div><!-- /.row -->
+		</div><!-- /.middle-content -->
+
+		<!-- footer -->
+		<footer class="jsbook-footer" role="contentinfo">
+			<div class="container text-center">
+				<p>Front by <a href="http://weibo.cn/kenslife" target="_blank">@Kenneth</a>, System by <a href="http://weibo.cn/kenslife" target="_blank">@Sherylynn</a>.</p>
+				<p>前端使用 Bootstrap 快速开发，<a href="http://www.bootcss.com/" target="_blank">Bootstrap中文网</a>。</p>
+				<p>后台使用 NodeJs 强力驱动</p>
+				<p></p>
+				<p>当前版本：v0.0.1 · <a href="http://www.bootcss.com/" target="_blank">GitHub 代码仓库</a> · <a href="http://www.bootcss.com/" target="_blank">使用手册</a> · <a href="http://www.bootcss.com/" target="_blank">关于开发者</a> · <a href="http://www.bootcss.com/" target="_blank">讨论组</a>
+				</p>
+			</div>
+		</footer><!-- /.footer -->
+
+		<!-- jQuery文件。务必在bootstrap.min.js 之前引入 
+		<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>-->
+		<!-- 最新的 Bootstrap 核心 JavaScript 文件 
+		<script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>
